@@ -287,12 +287,10 @@
         ];
          function submit(){
              let name= document .getElementById("name").value;
-             document.getElementById("title").innerHTML=name;
-             if(name===""){
-                 document.getElementById("title").innerHTML="please enter your value";
-                 document.getElementById("title").style="color:red";
-             }
-             console.log("product");
+            function submit(){
+             let name= document .getElementById("name").value;
+             let result = arr.filter((val)=> val.name === name || val.color === name)
+             console.log(result);
          }
      </script>
 </body>
